@@ -9,6 +9,10 @@ gem 'jquery-rails', '4.0.3'
 gem 'turbolinks',   '2.3.0'
 gem 'jbuilder',     '2.2.3'
 gem 'sdoc',         '0.4.0', group: :doc
+gem 'aws',			'2.10.2'
+gem 'aws-sdk', '~> 2.2', '>= 2.2.31'
+gem 'aws-sdk-rails', '~> 1.0', '>= 1.0.1'
+
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
