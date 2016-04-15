@@ -1,15 +1,13 @@
 
 
 <div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
+  <h1>Welcome to the Thor</h1>
 
   <h2>
-    This is the home page for the
-    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
+    Here are your latest images:<br>
 
     <% @keys.each do |image| %>
-	<%= "<img src=\"#{@rootURL}#{image.text}\">" %>
+	<img src="<%=@rootURL+image.text%>">
 	<% end %>
 
   </h2>
