@@ -1,4 +1,4 @@
-<% URL=http://s3.amazonaws.com/bucketname/filename %>
+
 
 <div class="center jumbotron">
   <h1>Welcome to the Sample App</h1>
@@ -7,9 +7,17 @@
     This is the home page for the
     <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
     sample application.
+
+    <% @keys.each do |image| %>
+	<%= "<img src=\"#{@rootURL}#{image.text}\">" %>
+	<% end %>
+
   </h2>
 
   <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+  
+  
+
 </div>
 
 <%= link_to image_tag("rails.png", alt: "Rails logo"),

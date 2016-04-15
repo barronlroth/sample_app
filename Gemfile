@@ -12,6 +12,7 @@ gem 'sdoc',         '0.4.0', group: :doc
 gem 'aws',			'2.10.2'
 gem 'aws-sdk', '~> 2.2', '>= 2.2.31'
 gem 'aws-sdk-rails', '~> 1.0', '>= 1.0.1'
+gem 'nokogiri', '~> 1.6', '>= 1.6.7.2'
 
 
 group :development, :test do
