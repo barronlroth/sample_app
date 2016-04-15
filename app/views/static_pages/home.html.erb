@@ -6,17 +6,27 @@
   <h2>
     Here are your latest images:<br>
 
-    <% @keys.each do |image| %>
-	<img src="<%=@rootURL+image.text%>">
-	<% end %>
 
   </h2>
 
-  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+
   
   
 
 </div>
+<% @keys.each do |image| %>
+	<div class="img">
+	<a target="_blank" href="<%=@rootURL+image.text%>">
+	<img src="<%=@rootURL+image.text%>">
+	</a>
+	  <div class="desc"><%=image.text%></div>
+	</div>
 
-<%= link_to image_tag("rails.png", alt: "Rails logo"),
-            'http://rubyonrails.org/' %>
+<% end %>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
